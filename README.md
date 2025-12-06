@@ -5,6 +5,8 @@ Contribuição: Eduarda de Oliveira Bernardino, Pedro Henrique Fernandes, Matheu
 
 Sistema completo de gerenciamento bancário — Back-end, Front-end e Banco de Dados
 
+
+
 ## 📌 1) Descrição do Projeto
 
 O Banco Malvader é um sistema bancário completo, desenvolvido com foco em arquitetura organizada, boas práticas de programação e modelagem profissional de banco de dados.
