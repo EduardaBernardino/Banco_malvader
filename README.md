@@ -1,125 +1,231 @@
-Alunos: Eduarda de Oliveira Bernardino, Pedro Henrique Fernandes, Matheus Martins Rios e Thiago Litiery Campelo Moreira
-Professor: Malvezzi
-Matéria: Laboratório de Banco de Dados
+Contribuição: Eduarda de Oliveira Bernardino, Pedro Henrique Fernandes, Matheus Martins Rios e Thiago Litiery Campelo Moreira
 
 
-README
-SISTEMA BANCO MALVADER
+### 🏦 Banco Malvader
 
-1) DESCRIÇÃO DO PROJETO
-O Banco Malvader é um sistema acadêmico completo para gerenciamento de operações bancárias, desenvolvido com foco em arquitetura organizada, boas práticas de programação e modelagem profissional de banco de dados.
-O sistema permite:
-•	Cadastro e gestão de usuários, clientes e funcionários;
-•	Cadastro de agências e seus endereços;
-•	Abertura, auditoria, acompanhamento e encerramento de contas bancárias;
-•	Movimentações como depósitos, saques, transferências, taxas e rendimentos;
-•	Geração de relatórios internos;
-•	Registro de eventos por meio de auditoria e histórico;
-•	Manipulação dos dados via procedures, triggers, views e funções internas;
-•	Armazenamento estruturado e seguro em MySQL.
-O objetivo do projeto é apresentar uma solução completa e realista para um sistema bancário, integrando conhecimentos de banco de dados, regras de negócio e modelagem ER.
-O projeto foi dividido entre os integrantes em Back-end, Front-end e Modelagem de Banco, resultando em um sistema funcional e completo.
+Sistema completo de gerenciamento bancário — Back-end, Front-end e Banco de Dados
 
-2) TECNOLOGIAS UTILIZADAS
-2.1) Back-end
-•	Java
-•	Spring Boot
-•	MySQL Connector
-2.2) Front-end
-•	Estrutura baseada em Views e Controllers
-•	 Thymeleaf
-•	Linguagem de marcação: HTML e CSS
-2.3) Banco de Dados
-•	MySQL Workbench
-•	Modelagem ER completa
-•	Stored Procedures, Views e Triggers avançadas
-2.4) Ferramentas e dependências opcionais: 
-•	Git e Github
+## 📌 1) Descrição do Projeto
 
-3) PRÉ-REQUISITOS
-•	Java 
-•	MySQL Server e MySQL Workbench
-•	Banco de dados criado previamente com o script fornecido
+O Banco Malvader é um sistema bancário completo, desenvolvido com foco em arquitetura organizada, boas práticas de programação e modelagem profissional de banco de dados.
+O projeto foi dividido entre Back-end, Front-end e Modelagem de Banco, resultando em uma solução funcional, robusta e realista.
 
-4) CONFIGURAÇÃO DO BANCO DE DADOS
-O script inclui:
-4.1) Integridade Referencial Completa
-•	PKs e FKs estruturadas
-•	ON UPDATE/DELETE padrão (restritivo)
-•	Índices nos campos de pesquisa
-4.2) Regras de Negócio Duras (Triggers)
-Exemplos:
-•	Limite de depósito diário
-•	Atualização automática de saldo
-•	Auditoria automática ao abrir conta
-•	Proibição de editar senha sem procedure
-•	Limite de funcionários por agência
-4.3) Procedures de Operações Internas
-•	Alterar senha
-•	Calcular score de crédito
-•	Encerrar conta com validação
-•	Aplicar taxa por saque excessivo
-4.4) Funções internas
-•	Algoritmo de Luhn
-•	Gerador de conta bancária
-4.5) Views
-•	Resumo de contas por cliente
-•	Movimentações recentes (últimos 90 dias)
+## 🔧 O sistema permite:
 
-5) FUNCIONALIDADES DO SISTEMA
-5.1) Autenticação
-•	Login de funcionários e clientes
-•	Hash de senha com MD5
-•	Validação via procedure
-5.2) Usuários e Funcionários
-•	Cadastro
-•	Atualização
-•	Associação a agências
-•	Hierarquia (supervisor → subordinado)
-5.3) Clientes
-•	Geração automática de score
-•	Vínculo com contas
-•	Endereços associados
-5.4) Contas Bancárias
-•	Corrente
-•	Poupança
-•	Investimento
-•	Número gerado automaticamente
-•	Status: ativa, bloqueada, encerrada
-5.5) Operações Bancárias
-•	Depósito
-•	Saque
-•	Transferência
-•	Taxas
-•	Rendimento
+Cadastro e gestão de usuários, clientes e funcionários
+
+Cadastro de agências e endereços
+
+Abertura, auditoria, acompanhamento e encerramento de contas
+
+Movimentações como depósitos, saques, transferências, taxas e rendimentos
+
+Relatórios internos e dashboards de indicadores
+
+Registro automático de ações por auditoria e histórico
+
+Automação de lógica de negócio via procedures, triggers, views e functions
+
+Armazenamento seguro e estruturado em MySQL
+
+O objetivo central é demonstrar um sistema bancário completo, integrando regras de negócio, modelagem ER e programação aplicada.
+
+## 🚀 2) Tecnologias Utilizadas
+🔹 2.1 Back-End
+
+Java
+
+Spring Boot
+
+MySQL Connector
+
+🔹 2.2 Front-End
+
+HTML / CSS
+
+Thymeleaf
+
+Arquitetura baseada em Controllers + Views
+
+🔹 2.3 Banco de Dados
+
+MySQL Workbench
+
+Modelagem ER completa
+
+Stored Procedures
+
+Views
+
+Triggers
+
+🔹 2.4 Ferramentas Complementares
+
+Git e GitHub
+
+## 📦 3) Pré-requisitos
+
+Para executar o sistema, é necessário:
+
+Java instalado
+
+MySQL Server e MySQL Workbench
+
+Banco de dados criado previamente utilizando o script fornecido
+
+## 🗄 4) Configuração do Banco de Dados
+
+O script SQL do projeto foi desenvolvido com foco em integridade, segurança e automação de regras internas.
+
+🔹 4.1 Integridade Referencial
+
+Primary Keys e Foreign Keys estruturadas
+
+Políticas de ON UPDATE/DELETE restritivas
+
+Índices otimizados para pesquisa
+
+🔹 4.2 Triggers de Regras de Negócio
+
+Alguns exemplos implementados:
+
+Limite de depósito diário
+
+Atualização automática de saldo
+
+Auditoria na abertura de conta
+
+Proibição de alteração direta de senha sem procedure
+
+Limite máximo de funcionários por agência
+
+🔹 4.3 Stored Procedures
+
+Alteração de senha com validação
+
+Cálculo de score de crédito
+
+Encerramento de conta com regras automáticas
+
+Aplicação de taxas por saques excessivos
+
+🔹 4.4 Funções Internas
+
+Algoritmo de Luhn (geração de números válidos)
+
+Gerador de conta bancária
+
+🔹 4.5 Views
+
+Resumo de contas por cliente
+
+Movimentações dos últimos 90 dias
+
+## 🧩 5) Funcionalidades do Sistema
+🔹 5.1 Autenticação
+
+Login de clientes e funcionários
+
+Senhas armazenadas com hash MD5
+
+Validação via stored procedure
+
+🔹 5.2 Usuários e Funcionários
+
+Cadastro e atualização
+
+Associação a agências específicas
+
+Hierarquia com supervisores e subordinados
+
+🔹 5.3 Clientes
+
+Score gerado automaticamente
+
+Relação com contas
+
+Endereços vinculados
+
+🔹 5.4 Contas Bancárias
+
+Tipos suportados:
+
+Corrente
+
+Poupança
+
+Investimento
+
+Funcionalidades:
+
+Número gerado automaticamente
+
+Status: ativa, bloqueada, encerrada
+
+🔹 5.5 Movimentações Bancárias
+
+Depósito
+
+Saque
+
+Transferência
+
+Rendimentos
+
+Taxas automáticas
+
 Regras garantidas por triggers:
-•	Limite diário de depósito
-•	Consistência entre origem/destino
-•	Atualização automática de saldo
-5.6) Relatórios
-•	Movimentações dos últimos 90 dias
-•	Resumo de contas
-•	Auditoria de abertura
-•	Histórico de encerramento
-5.7) Dashboard
-•	Dados agregados
-•	Indicadores do banco
-•	Informações rápidas para gerentes
-5.8) Interface Gráfica
-•	Tela de Login
-•	Dashboard inicial
-•	Pagina de Clientes
-•	Pagina de Funcionários
-•	Transações
-•	Relatórios
-•	Configurações
 
-CONCLUSÃO
-O Sistema Bancário Malvader oferece uma arquitetura robusta, segura, documentada e totalmente estruturada. Possui:
-•	Banco de dados profissional
-•	Back-end modular em Java
-•	Front-end flexível
-•	Modelagem ER correta
-•	Controle de operações bancárias realistas
-O projeto atende integralmente os requisitos da disciplina e demonstra a capacidade da equipe em desenvolver um sistema completo de nível profissional.
+Limite de depósito diário
 
+Consistência origem/destino
+
+Atualização automática do saldo
+
+🔹 5.6 Relatórios Internos
+
+Movimentações dos últimos 90 dias
+
+Resumo de contas
+
+Auditoria de abertura
+
+Histórico de encerramento
+
+🔹 5.7 Dashboard
+
+Indicadores do banco
+
+Dados agregados
+
+Visão estratégica para gerentes
+
+🔹 5.8 Interface Gráfica (Front-end)
+
+Tela de Login
+
+Dashboard inicial
+
+Página de Clientes
+
+Página de Funcionários
+
+Transações
+
+Relatórios
+
+Configurações
+
+## 🏁 Conclusão
+
+O Banco Malvader é um sistema bancário completo, construído com:
+
+Arquitetura robusta e modular
+
+Banco de dados profissional e seguro
+
+Modelagem ER estruturada
+
+Regras de negócio implementadas diretamente no MySQL
+
+Integração entre Back-end, Front-end e Banco de Dados
